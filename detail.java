@@ -3,7 +3,7 @@ public class detail {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("enter name is ");
-        String name = scan.next();
+        String name = scan.nextLine();
         System.out.println("enter country name is ");
         String country = scan.next();
         System.out.println("enter contact number ");
