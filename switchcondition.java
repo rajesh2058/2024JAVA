@@ -20,6 +20,10 @@ public class switchcondition {
             break; //break is use to stop case if it is true
             case 2 : System.out.println("numbers is greater ");
             break;
+            case 3 : System.out.println("numbers are equal");
+            break; //break is use to stop case if it is true
+            case 4 : System.out.println("numbers is greater ");
+            break;
             default :  System.out.println("numbers c is greater "); 
         }
         }
