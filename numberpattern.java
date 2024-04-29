@@ -8,7 +8,7 @@ public class numberpattern {
         int number =1;
         for(int i=0;i<a;i++){
             for(int j=0;j<=i;j++){
-                System.out.print(number);
+                System.out.print("*");
                 number ++;
             }
             System.out.println ();
