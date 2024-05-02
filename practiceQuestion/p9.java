@@ -4,11 +4,11 @@ import java.util.*;
 
 public class p9 {
     public static void main(String[] args) {
-        Scanner A = new Scanner( System.in);
+        Scanner B= new Scanner( System.in);
         System.out.print("enter value of x:");
-        int x = A.nextInt();
+        int x = B.nextInt();
         System.out.print("enter value of n:");
-        int n= A.nextInt();
+        int n= B.nextInt();
         int b=0;
         int a=1;
         for(int i=1;i<n;i++){
