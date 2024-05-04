@@ -15,7 +15,7 @@ public class p1 {
         int a = A.nextInt();
         int b = A.nextInt();
         int c = A.nextInt();
-        int sum= average(a,b,c); //its time complexity is O(1)
+        int sum= average(a,b,c); //its time complexity is O(1) and space compexity is 32 bytes
 
         System.out.println("average of the given number is "+sum);
     }

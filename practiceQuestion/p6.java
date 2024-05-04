@@ -3,13 +3,13 @@
 import java.util.*;
 public class p6 {
     
-    public static void main(String[] args) {
-      int a = 5;
+    public static void main(String[] args) { //no time complexity for infinite loop  
+      int a = 0;
     do{
-  a = a /1;
- System.out.println("output is "+a);
+  
+ System.out.println("output is "+a); 
 
     } 
-    while (a==5);
+    while (true);
     }
 }

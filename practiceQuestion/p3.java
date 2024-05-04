@@ -7,7 +7,7 @@ public class p3 {
         System.out.println("enter value of a and b");
         int a=A.nextInt();
         int b=A.nextInt();
-            if(a<b)
+            if(a<b) //its time complexity is 0(1)
 {
     System.out.println("greater "+b);
 }

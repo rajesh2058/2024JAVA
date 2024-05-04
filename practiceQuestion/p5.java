@@ -6,7 +6,7 @@ public class p5 {
      double circumference = 2 * 3.14 * a ;
      return circumference;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { //O(1)
       Scanner A= new Scanner(System.in);
       System.out.println("enter radius of circle");
       int a = A.nextInt();

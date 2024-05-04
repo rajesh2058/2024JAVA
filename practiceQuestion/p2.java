@@ -7,7 +7,7 @@ public class p2 {
         System.out.println("enter n number");
         int n=A.nextInt();
         int a=0;
-        for(int i=1;i<=n;i++)
+        for(int i=1;i<=n;i++) //its time complexity is O(n)
         {
             if(i%2==0)
 {
