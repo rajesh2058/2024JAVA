@@ -20,7 +20,7 @@ public class p7 {
             case 1:
                 Scanner B= new Scanner(System.in);
                 System.out.println("enter number");
-                int a = B.nextInt();
+                int a = B.nextInt(); //time complexity is O(1)
          
                 if(a>0){
                     counterpositive=counterpositive +1;
