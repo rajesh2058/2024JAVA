@@ -3,11 +3,11 @@ public class searchtwodarray {
     public static void main(String[] args) {
         Scanner A= new Scanner(System.in);
         System.out.println("enter numbers of rows:");
-        int a = A.nextInt(); 
+        int c = A.nextInt(); 
         System.out.println("enter numbers of column:");
         int b = A.nextInt();
-        int[][] Sushant = new int [a][b]; //syntax is type[][]arrayName=new type[rows][column]
-        for(int i=0;i<a;i++){
+        int[][] Sushant = new int [c][b]; //syntax is type[][]arrayName=new type[rows][column]
+        for(int i=0;i<c;i++){
             for(int j=0;j<b;j++)
             {
                 System.out.println("enter value in position of "+(i+1)+" row and "+(j+1)+" column");
@@ -19,7 +19,7 @@ public class searchtwodarray {
         System.out.println("enter number you wanna search in matrix:");
         int x = A.nextInt(); 
         //boolean found =false;
-        for(int i=0;i<a;i++){
+        for(int i=0;i<c;i++){
             for(int j=0;j<b;j++)
             {
                 if(x==Sushant[i][j])
