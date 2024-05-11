@@ -18,6 +18,9 @@ public class string3 {
     else{
         System.out.println("different");
     }
+    String f = b.substring(0,4);//o dekhi suru huna and 4 vanda aghi samma
+    
+    System.out.println(f);
 
 
     }
