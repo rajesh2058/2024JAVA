@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4728d7b7-8450-40d4-bec3-bf811f9a3142" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/DSA/string4.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/string4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/arrayP1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/arrayP1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/arrayP2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/arrayP2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/arrayp3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/arrayp3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/searchtwodarray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/searchtwodarray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/string5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/timecomplexity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/twodarray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/twodarray.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +43,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
