@@ -35,8 +35,11 @@ public class sudoku {
             return true;
         }
        
-        public boolean helper(char[][] board, int row, int col) {
-            if(row == board.length) {
+        public boolean helper(char[][] board, int row, int col) //step 3
+         {
+            if(row == board.length) 
+            //it is length of row but column has same length aswell
+            {
                 return true;
             }
            
@@ -73,8 +76,37 @@ public class sudoku {
         }
        
         public void solveSudoku(char[][] board) {
-            helper(board, 0, 0);
+            helper(board, 0, 0);   //step 2
+            //char value is provided and it gives row and column value to helper fun 
             //calls helper function
+        }
+        public static void main(String[] args) {
+            sudoku Sudoku = new sudoku();
+            //call sudoku call with specific function
+            // Define a sample Sudoku puzzle
+            //2d array with function
+            char[][] board = {
+                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
+                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
+                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
+                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
+                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
+                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
+                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
+                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
+                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
+            };
+    
+            // Solve the Sudoku puzzle
+            Sudoku.solveSudoku(board);//step 1 
+    
+            // Print the solved Sudoku puzzle
+            for (int i = 0; i < board.length; i++) {
+                for (int j = 0; j < board[i].length; j++) {
+                    System.out.print(board[i][j] + " ");
+                }
+                System.out.println();
+            }
         }
      }
      
