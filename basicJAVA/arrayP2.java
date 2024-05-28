@@ -5,14 +5,10 @@ public class arrayP2 {
         Scanner sc = new Scanner(System.in);
       int size = sc.nextInt();
       int numbers[] = new int[size];
-
-
       //input
       for(int i=0; i<size; i++) {
           numbers[i] = sc.nextInt();
       }
-
-
       int max = Integer.MIN_VALUE; //Integer.MIN_VALUE is -2222222 stg so value 
       //in array greater then this will override and stored as max
       
@@ -26,8 +22,6 @@ public class arrayP2 {
            if(numbers[i] > max) {
                max = numbers[i]; //compare each value with max
            }
-        
-
     }
     System.out.println("Largest number is : " + max);
     System.out.println("Smallest number is : " + min);
