@@ -1,4 +1,7 @@
-
+//all static area allowed once in memory whereas object will allow
+//again and again
+//use to save memory
+// cannot be access by class name
     class Student {
         static String school;
         String name;   

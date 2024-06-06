@@ -1,4 +1,4 @@
-
+//overload is function with same name but different parameter 
     class Student {
    String name;
    int age;

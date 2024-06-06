@@ -1,4 +1,6 @@
-
+//multiple inheritance can be achieve by interface
+//interface cannot have constructor 
+//use keyboard interface 
     interface Animal {
         void walk();
      }

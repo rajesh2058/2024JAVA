@@ -1,3 +1,4 @@
+//override means same function used by subclass and base class
 class Shape {
     public void area() {
         System.out.println("Displays Area of Shape");
