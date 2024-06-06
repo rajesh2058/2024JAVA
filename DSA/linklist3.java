@@ -12,9 +12,18 @@ class ListNode{
     ListNode(int val) {
       this.val = val;
       this.next = null;
+    }  
+}
+// Helper method to print the linked list
+public static void printList(ListNode head) {
+    ListNode current = head;
+    while (current != null) {
+        System.out.print(current.val + " ");
+        current = current.next;
+    }
+    System.out.println();
     }
     
-}
 public class linklist3{
  public static ListNode removeNthFromEnd(ListNode head, int n){
     // if(head.next == null){
@@ -43,15 +52,7 @@ second.next = second.next.next;
 return dummy.next;
 }
 
-// Helper method to print the linked list
-public static void printList(ListNode head) {
-ListNode current = head;
-while (current != null) {
-    System.out.print(current.val + " ");
-    current = current.next;
-}
-System.out.println();
-}
+
 
 public static void main(String[] args) {
 // Creating a linked list: 1 -> 2 -> 3 -> 4 -> 5
@@ -71,8 +72,7 @@ head = removeNthFromEnd(head, 2);
 // Print the modified list
 System.out.print("Modified List: ");
 printList(head);
- } 
-    
+} 
 }
 //time complexity o(n)
 //and space complexity 0(1)
