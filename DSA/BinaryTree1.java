@@ -49,7 +49,6 @@ public static void inorder(Node root) {
     System.out.print(root.data+" ");
     inorder(root.right);
 }
-
 //postorder
 public static void postorder(Node root) {
     if(root == null) {
@@ -59,7 +58,6 @@ public static void postorder(Node root) {
     postorder(root.left);
     postorder(root.right);
     System.out.print(root.data+" ");
-
 }
 //levelorder
 public static void levelOrder(Node root) {
@@ -90,13 +88,15 @@ public static void levelOrder(Node root) {
            }
        }
    }
+
+
+   
    public static void main(String args[]) {
        int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
        BinaryTree tree = new BinaryTree();
       
        Node root = tree.buildTree(nodes);
        System.out.println(root.data);
-       System.out.println();
        preorder(root);
        System.out.println();
        inorder(root);
