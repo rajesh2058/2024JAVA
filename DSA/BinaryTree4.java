@@ -1,3 +1,7 @@
+    //check if tree lies as sub tree in another tree
+    // if we put public word infront of class TreeNode then JVM expect file name as TreeNode java
+    //but when we just put class TreeNodes it treat it as private - package so which it will be accessable
+    //within package 
     class TreeNode {
         int val;
         TreeNode left;
