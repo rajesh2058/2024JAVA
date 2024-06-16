@@ -1,6 +1,8 @@
     //check if tree lies as sub tree in another tree
-    // if we put public word infront of class TreeNode then JVM expect file name as TreeNode java
-    //but when we just put class TreeNodes it treat it as private - package so which it will be accessable
+    // if we put public word infront of class TreeNode
+    // then JVM expect file name as TreeNode java
+    //but when we just put class TreeNodes it treat it as private - package
+    //` so which it will be accessable
     //within package 
     class TreeNode {
         int val;
@@ -16,29 +18,40 @@
     }
     
     class Solution {
+        //checking are values equal or not 
         public boolean isIdentical(TreeNode root, TreeNode subRoot) {
+            //condition for leaf too
             if (subRoot == null && root == null) {
                 return true;
             }
             if (root == null || subRoot == null) {
                 return false;
             }
+            //check are root equal or not
             if (root.val == subRoot.val) {
-                return isIdentical(root.left, subRoot.left) && isIdentical(root.right, subRoot.right);
+            // if root mach then again check right root
+            // and left roots are identical or not
+                return isIdentical(root.left, subRoot.left) 
+                && isIdentical(root.right, subRoot.right);
             }
             return false;
         }
     
+        //check if subtree match or not
         public boolean isSubtree(TreeNode root, TreeNode subRoot) {
+            //check subroot is null or not
             if (subRoot == null) {
                 return true;
             }
             if (root == null) {
                 return false;
             }
+            //if isIdentical check value and return true then automatically return true
             if (isIdentical(root, subRoot)) {
                 return true;
             }
+            //if isIdentical return false then check left root with subroot
+            //and with right root with subroot until isidentical return true
             return isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
         }
     }
@@ -59,6 +72,7 @@
     
             // Check if subRoot is a subtree of root
             Solution solution = new Solution();
+            //save boolean result 
             boolean result = solution.isSubtree(root, subRoot);
     
             // Print the result
