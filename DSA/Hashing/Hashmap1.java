@@ -30,7 +30,7 @@ public class Hashmap1 {
             System.out.println(key+ " " + map.get(key));
             //remove
             map.remove("Nepal");
-            System.out.println(map);
+            System.out.println(map );
         }
     }
 }
