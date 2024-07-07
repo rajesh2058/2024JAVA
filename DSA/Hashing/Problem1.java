@@ -32,7 +32,6 @@ public class Problem1 {
                 System.out.println(key);
             }
         }
-
     }
     public static void main(String[] args) {
         int nums[]={1,3,2,5,1,3,3,1,5,1,3};
