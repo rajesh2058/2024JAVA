@@ -70,10 +70,15 @@
     */
     int V = 7;
     ArrayList<Edge> graph[] = new ArrayList[V];
+    //we create queue or arraylist name graph of size V
+    // where we put BFS order output
     createGraph(graph);
-    boolean  vis[] = new boolean[V];
+    boolean  vis[] = new boolean[V]; 
+    //create visited array size of V where it function is boolean
+    //this loop can be use full for both complete graph
+    //or distributed graph
     for(int i =0;i<V;i++){
-        if(vis[i] == false){
+        if(vis[i] == false){ //if visited array is false then
             bfs(graph,V,vis,i);
         }
     }
