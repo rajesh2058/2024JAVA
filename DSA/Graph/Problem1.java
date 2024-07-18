@@ -56,7 +56,7 @@ public class Problem1 {
         graph[5].add(new Edge(5, 6, 1));
         graph[6].add(new Edge(6, 5, 1));
     }
-
+     //ITS time complexity is O(V*V)
     public static void printAllPaths(ArrayList<Edge> graph[], int src,
      int tar, String path, boolean vis[]) {
         if (src == tar) {
@@ -88,5 +88,6 @@ public class Problem1 {
         boolean vis[] = new boolean[V];
         vis[src] = true;
         printAllPaths(graph, src, tar, "" + src, vis);
+        //NEBIOUR HAVING SMALL VALUE WILL COMES FIRST
     }
 }
