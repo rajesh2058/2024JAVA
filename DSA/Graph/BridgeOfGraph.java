@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class BridgeOfGraph {
-    static class Edge {
+static class Edge {
 int src;
 int dest;
 public Edge(int s, int d) {
