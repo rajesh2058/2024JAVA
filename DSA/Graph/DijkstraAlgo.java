@@ -78,3 +78,4 @@ public class DijkstraAlgo {
         System.out.println("shortest distance is "+dist[dist.length-1]);
     }
 }
+

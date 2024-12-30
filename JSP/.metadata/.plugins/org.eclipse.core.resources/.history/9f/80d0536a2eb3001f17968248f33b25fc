@@ -1,0 +1,50 @@
+<%@ page import="java.sql.*" %>
+<%
+    String name = request.getParameter("name");
+    String email = request.getParameter("email");
+    String password = request.getParameter("password");
+    String rem = request.getParameter("remember");
+
+    // Handle "Remember Me" feature
+    if (rem != null) {
+        Cookie nameCookie = new Cookie("REMEMBER", name);
+        Cookie emailCookie = new Cookie("EMAIL", email);
+        response.addCookie(nameCookie);
+        response.addCookie(emailCookie);
+    } else {
+        Cookie nameCookie = new Cookie("REMEMBER", "NO");
+        Cookie emailCookie = new Cookie("EMAIL", "NO");
+        response.addCookie(nameCookie);
+        response.addCookie(emailCookie);
+    }
+
+    boolean isValid = false;
+
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost/test", "root", "");
+
+        // Prepare statement to check email, username, and password
+        PreparedStatement pre = con.prepareStatement(
+            "SELECT * FROM test WHERE username = ? AND email = ? AND password = ?"
+        );
+        pre.setString(1, name);
+        pre.setString(2, email);
+        pre.setString(3, password);
+        ResultSet rs = pre.executeQuery();
+
+        isValid = rs.next();
+        rs.close();
+        pre.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    // Redirect based on login validity
+    if (isValid) {
+        session.setAttribute("NAME", name);
+        response.sendRedirect("day6home.jsp");
+    } else {
+        response.sendRedirect("login.jsp?message=Invalid Login");
+    }
+%>

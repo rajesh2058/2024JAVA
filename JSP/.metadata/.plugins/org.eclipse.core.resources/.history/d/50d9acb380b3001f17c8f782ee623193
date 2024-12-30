@@ -1,0 +1,51 @@
+<%@ include file="header.jsp" %>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #ffffff;
+        padding: 20px 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px;
+    }
+
+    h1 {
+        color: #4CAF50;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: inline-block;
+        margin: 10px 5px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<div class="container">
+    <h1>Welcome to my page, <%= name %></h1>
+    <a href="day6userview.jsp">View User</a>
+    <a href="logout.jsp">Logout</a>
+</div>

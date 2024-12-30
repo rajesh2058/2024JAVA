@@ -1,0 +1,7 @@
+<%@ include file="header.jsp" %>
+
+<h1>Welcome to my page, <%= name %></h1>
+<a href="day6register.jsp">Register Users</a>|
+<a href="day6login.jsp">login Users</a>|
+<a href="day6userview.jsp">View User</a>
+<a href="logout.jsp">Logout</a>

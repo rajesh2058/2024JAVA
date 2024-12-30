@@ -1,0 +1,39 @@
+<div class="form-container">
+    <h2>Login</h2>
+    <%
+        String message = request.getParameter("message");
+        if (message != null) {
+    %>
+    <font color="red"><%= message %></font>
+    <% 
+        }
+    %>
+    
+    <%
+        String name = "";
+        String email = "";
+        String check = "";
+        Cookie[] c = request.getCookies();
+        if (c != null) {
+            for (Cookie ci : c) {
+                if (ci.getName().equals("REMEMBER")) {
+                    String v = ci.getValue();
+                    if (!v.equals("NO")) {
+                        name = v;
+                        check = "checked";
+                    }
+                }
+                if (ci.getName().equals("EMAIL")) {
+                    email = ci.getValue();
+                }
+            }
+        }
+    %>
+    <form method="post" action="day5logincheck.jsp">
+        User Name: <input type="text" name="name" value="<%= name %>"><br>
+        Email: <input type="email" name="email" value="<%= email %>"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="checkbox" name="remember" value="Yes" <%= check %>> Remember Me<br>
+        <input type="submit" value="Login">
+    </form>
+</div>

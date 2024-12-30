@@ -1,0 +1,29 @@
+<%@ page import="java.sql.*" %>
+<h1>View User</h1>
+<table>
+<tr><th>Name</th><th>Email</th><th>Action</th></tr>
+<%
+	try {
+Class.forName("com.mysql.jdbc.Driver");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost/advancedjava","root","");
+PreparedStatement pre=con.prepareStatement("select * from user");
+ResultSet rs=pre.executeQuery();
+while(rs.next()) {
+%>
+	<tr><td><%=rs.getString("NAME") %></td><td><%=rs.getString("EMAIL") %></td>
+	<td><a href="day6edituser.jsp?id=<%=rs.getString("ID") %>">Edit</a>
+		|
+		<a href="day6deleteuser.jsp?id=<%=rs.getString("ID") %>">Delete</a>
+	</td>
+	</tr>
+<%	
+	
+}
+rs.close();
+pre.close();
+	} catch(Exception e) {
+			e.printStackTrace();
+		}
+
+%>
+</table>

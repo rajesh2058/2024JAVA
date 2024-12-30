@@ -15,4 +15,3 @@
          StaticExample.display();  //no need of object to call static method
         }
     }
-
